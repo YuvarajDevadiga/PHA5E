@@ -1,0 +1,159 @@
+@font-face {
+    font-family: semiboldtext;
+    src: url(./public/fonts/AreaNormal-Semibold.ttf);
+}
+
+@font-face {
+    font-family:boldtext;
+    src: url(./public/fonts/DrukWide-Bold-Web.ttf);
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+ 
+html,body{
+width: 100%;
+height: 100%;
+}
+
+main{
+position: relative;
+background-color: #212121;
+color: white;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+
+}
+
+.nav{
+height: 80px;
+width: 100%;
+/* background: red; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 25px;
+}
+
+.nav-part1{
+font-size: 25px;
+font-weight: 900;
+font-family: boldtext;
+letter-spacing: -1px;
+}
+
+.nav-part2{
+display: flex;
+justify-content: space-between;
+gap: 50px;
+}
+
+.nav-part2 h4{
+font-family: semiboldtext;
+font-size: 16px;
+cursor: pointer;
+}
+
+.hero-div-wrapper{
+width: 100%;
+height: calc(100vh - 80px);
+display: flex;
+align-items: center;
+justify-content:center ;
+/* background-color: red; */
+}
+
+.hero-div{
+width: 80%;
+height: 85vh;
+/* background-color: red; */
+padding: 40px 10px;
+position: relative;
+}
+
+.h1-div{
+overflow: hidden;
+}
+
+.hero-div-text h1{
+font-family:boldtext;
+font-weight: 800;
+font-size: 97px;
+line-height: 95px;
+text-align: center;
+position: relative;
+z-index: 2;
+}
+
+
+.image-div, .img{
+width: 340px;
+height: 200px;
+position:absolute;
+
+}
+
+.image-div img{
+width:100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+
+.overlay{
+width: 100%;
+height: 100%;
+background-color: transparent;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 4;
+}
+
+#image1{
+top: 18%;
+left: 3%;
+}
+
+#image2{
+right: 14%;
+top:0;
+}
+
+#image3{
+bottom: 2%;
+left: 8%;
+}
+
+#image4{
+bottom: 20%;
+right: 9%;
+}
+
+
+.svg-div{
+width: 100%;
+height: 100%;
+position: absolute;
+left: -15%;
+top: -25%;
+z-index: 0;
+display: none;
+}
+
+.svg-text{
+width: 100%;
+height: 100%;
+position:absolute;
+top: -4%;
+font-family: boldtext;
+font-weight: 900;
+z-index: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
